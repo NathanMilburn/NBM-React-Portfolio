@@ -1,0 +1,433 @@
+/* Catch-all formatting for content not specifically formatted */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Changed the original background color of gray to a linear gradient of other monochrome colors */
+body {
+    background-image: linear-gradient(90deg, black, gray, mintcream);
+    color: mintcream;
+    font-size: 16px;
+    line-height: 1;
+    height: 100%;
+}
+
+/* Fixed header to allow for the user to direct to any point of the page without the need to scroll back up to the top */
+header {
+    height: 150px;
+    padding: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+    color: mintcream;
+    position:fixed;
+    width: 100%;
+    box-shadow: 5px 2px 5px cornflowerblue;
+}
+
+header img {
+    width:75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .last-name {
+    color:cornflowerblue;
+}
+
+/* Styling and formatting of my nav links in the header */
+header nav {
+    padding-top: 45px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color:mintcream;
+}
+
+/* Hover effect to better show the user which piece of content they will be directed to once they click the nav link */
+header nav ul li a:hover {
+    color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* body {
+    font-size: 16px;
+    line-height: 1;
+    height: 100%;
+} */
+
+a {
+    color:mintcream;
+    text-decoration:cornflowerblue;
+}
+
+p {
+    font-size: 16px;
+}
+
+.the-thrill-haus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.the-thrill-haus p {
+    padding: 50px;
+    margin-bottom: 0;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornflowerblue;
+    color:mintcream;
+    border-radius: 25px;
+    box-shadow: 5px 2px 5px black;
+}
+
+/* Used a 150px buffer for the margin top to account for the space taken up by the fixed header */
+.the-thrill-haus img{
+    max-height:550px;
+    width:550px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    /* display:inline-block; */
+    box-shadow: 5px 2px 5px cornflowerblue;
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Created a id with a specific navigation point to allow for the user to move to the About Me section of the page without the top of the section being cut off by the fixed header */
+#about-me {
+    position:absolute;
+    top:500px;
+}
+
+.about-me {
+    max-width: 166%;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 325px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    box-shadow: 5px 10px 5px cornflowerblue;
+    color:mintcream;
+}
+
+.about-me h2 {
+    margin-bottom: 0.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cornflowerblue;
+}
+
+.about-me p {
+    margin-bottom: 1em;
+}
+
+.my-work-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-work-images img{
+    height:580px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    /* display:inline-block; */
+    box-shadow: 5px 2px 5px cornflowerblue;
+
+}
+
+.my-work a img {
+    height: 200px;
+    display: inline-block;
+}
+
+/* Created a id with a specific navigation point to allow for the user to move to the My Work section of the page without the top of the section being cut off by the fixed header */
+
+#my-work {
+    position:absolute;
+    top:1450px;
+}
+
+.my-work {
+    max-width: 166%;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 50px;
+    height: 350px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    box-shadow: 5px 10px 5px cornflowerblue;
+    color: cornflowerblue;
+}
+
+.my-work h2 {
+    margin-bottom: 0.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:cornflowerblue;
+}
+
+.my-work a {
+    color: cornflowerblue;
+}
+
+/* Used a hover effect for the hyperlink images to inform the user which link they will be directed to on click */
+.my-work a:hover {
+    color: mintcream;
+    border-color: 2px solid mintcream;
+}
+
+/* Instead of having the first example of my work being larger than the others, I chose to have each one grow in size with a highlighted border around them to give a visual queue to the user about which application they will be directed to. */
+.my-work a img:hover {
+    height: 225px;
+    border-radius: 25px;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0.3rem 1.3rem 0 cornflowerblue;
+    transition: transform 500ms;
+    /* box-shadow: inset 0px 0px 8px var(--cornflowerblue), 0 0 15px var(--cornflowerblue); Attempted to add a glow effect to my work image examples but was unable to get it to function properly, will revisit later. */
+}
+
+.contact-me-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-me-images img {
+    height:500px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    /* display:inline-block; */
+    box-shadow: 5px 2px 5px cornflowerblue;
+}
+
+.contact-info {
+    max-width: 166%;
+    margin-bottom: 20px;
+    padding: 50px;
+    max-height: 300px;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    box-shadow: 5px 10px 5px cornflowerblue;
+    color: mintcream;
+}
+
+.contact-info h2 {
+    margin-bottom: 0.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: cornflowerblue;
+}
+
+.contact-info h3 {
+    margin-bottom:0.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-info p {
+    margin-bottom: 1em;
+}
+
+.form {
+    position: relative;
+    width: 20rem;
+}
+
+strong {
+    color: cornflowerblue;
+}
+
+/* Stylization of my footer and Contact Me buttons to add additional accent to the monochrome colorway */
+button {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornflowerblue;
+    color:mintcream
+}
+
+/* Created a hover option to highlight the specific button when a user wants to click a link */
+
+button:hover {
+    background-color: black;
+    border: 2px solid cornflowerblue;
+    box-shadow: 0 0.3rem 1.3rem 0 cornflowerblue;
+    transition: transform 150ms;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color:mintcream;
+}
+
+/* Media query to format my page for mobile devices */
+/* I used 578px as the max width as it's one of the most common break points for mobile devices, which helped for testing */
+@media screen and (max-width: 578px) {
+    header {
+        display:table-column;
+        height: 250px;
+        
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header img {
+        display: table-column;
+    }
+    
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+        font-size: 30px;
+    } 
+
+    /* Changed from a linear gradient to solid gray to make sure media query changes were sticking. The gradient also got replecated three times in columns in the mobile view, so a solid gray worked as a nice correction for this. */
+    body {
+        background-image: linear-gradient(90deg, black, gray, mintcream);
+    }
+
+    /* Attempted to hid 2/3 images when in mobile format to look more similarly to an instagram feed */
+    .hide-on-small {
+        display:none;
+    }
+
+    .the-thrill-haus img{
+        flex-direction: column;
+        max-height:524px;
+        width:550px;
+        margin-top: 262px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        /* display:inline-block; */
+        box-shadow: 5px 2px 5px cornflowerblue;
+    
+    }
+
+     .about-me {
+        width: 556px;
+        margin-bottom: 20px;
+        padding: 18px;
+        height: 325px;
+        border-radius: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        box-shadow: 5px 10px 5px cornflowerblue;
+        color:mintcream;
+        
+    } 
+
+    .my-work {
+        width: 556px;
+        margin-bottom: 20px;
+        padding: 18px;
+        height: 383px;
+        border-radius: 25px;
+        flex-direction: column;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        box-shadow: 5px 10px 5px cornflowerblue;
+        color:mintcream;
+    }
+
+    .my-work a {
+        display: row;
+    }
+
+    .my-work a img {
+        height: 100px; 
+        width:200px;
+        display: inline-block;
+    }
+
+    .my-work a img:hover {
+        height: 120px;
+    }
+
+    .my-work-images img{
+        height:524px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        /* display:inline-block; */
+        box-shadow: 5px 2px 5px cornflowerblue;
+    
+    }
+ 
+    .contact-me-images img {
+        height:556px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        /* display:inline-block; */
+        box-shadow: 5px 2px 5px cornflowerblue;
+    }
+
+    .contact-info {
+        width: 556px;
+        margin-bottom: 20px;
+        padding: 18px;
+        height: 325px;
+        border-radius: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        box-shadow: 5px 10px 5px cornflowerblue;
+        color:mintcream;
+    }
+}
