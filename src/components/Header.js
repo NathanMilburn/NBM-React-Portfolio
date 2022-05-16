@@ -6,8 +6,8 @@ export default function Header({ setPage }) {
           <a href="#about" onClick={() => setPage("about")}>
             About
           </a>
-          <a href="#portfolio" onClick={() => setPage("portolfio")}>
-            Profolio
+          <a href="#portfolio" onClick={() => setPage("portfolio")}>
+            Portfolio
           </a>
           <a href="#services" onClick={() => setPage("services")}>
             Services
