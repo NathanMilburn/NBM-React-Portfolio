@@ -67,11 +67,13 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+        border-radius: 15px;
 
         &:hover {
             background: #404040;
             color: #6495ed;
             border-color: #ffffff;
+            border-radius: 15px;
         }
     }
 }
