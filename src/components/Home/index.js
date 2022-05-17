@@ -6,7 +6,7 @@ import AnimatedLetters from '../AnimatedLetters'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['N', 'a', 't', 'h', 'a', 'n']
+  const nameArray = [' ','N', 'a', 't', 'h', 'a', 'n']
   const lastNameArray = ['M', 'i', 'l', 'b', 'u', 'r', 'n']
 
   useEffect(() => {

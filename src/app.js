@@ -6,6 +6,8 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 
+
+// Work with useState to fix page reload issues
 function App() {
   return (
     <>
