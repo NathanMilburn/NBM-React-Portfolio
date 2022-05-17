@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# NBM-PWA-Text-Editor
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## USER STORY
 
-In the project directory, you can run:
+    AS A web developer
+    I WANT to create a personal portfolio that displays information about myself, how to contact me, and a list of displayed projects using React.js formatting
+    SO THAT potential employers can see my skillset with React coding and learn about why I might be a good candidate for their company.
 
-### `npm start`
+## TABLE OF CONTENTS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [DESCRIPTION](#description)
+- [INSTALLATION](#installation)
+- [LICENSE](#license)
+- [CONTRIBUTING](#contributing)
+- [QUESTIONS](#questions)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## DESCRIPTION
 
-### `npm test`
+ This portfolio was created entirely with React formatting and takes a completely different styling approach than my original portfolio site. 
+ 
+ Though the formatting and structuring is completely different, I wanted to maintain some consistency with the black, white, light gray, and corn flower blue colorways and Impact font to highlight the original site's design. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ The pages are a lot more responsive and feature fun animation elements like highlighted single characters slightly resembling piano keys, moving text on page load, and fontawesome icons that direct the user to all of my social links.
 
-### `npm run build`
+Some future developments I would like to include would be looping audio that plays at a low volume (to avoid from being too distracting) as well as loading animations once each page is selected and opened.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Another development I would like to include is video embedding which may require the use of a YouTube API.
+ 
+ Note: `Mobile formatting is created with a breakpoint of 578px I plan on adding more breakpoints in future developments`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## APPLICATION IN USE
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+LINK TO DEPLOYED SITE FOUND [HERE](google)
 
-### `npm run eject`
+Portfolio Site Homepage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![HomePage](./src/assets/images/home-page.png "Portfolio Home Page")
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Portfolio Site About Me Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![AboutMePage](./src/assets/images/about-me.png "Portfolio About Me Page")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Portfolio Projects Page 
 
-## Learn More
+![ProjectsPage](./src/assets/images/my-work.png "Portfolio Projects Page")
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Portfolio Contact Me Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![ContactMePage](./src/assets/images/contact-me.png "Portfolio Contact Me Page")
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## INSTALLATION
 
-### Analyzing the Bundle Size
+This project utilizes node modules like `react`, `react-router-dom`, `sass`, `animate.css`, `react-scripts` and styled through `scss` formatting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once proper packages have been installed, simply run `npm run start` which will run the build script and load the portfolio site at the home page.
 
-### Making a Progressive Web App
+## LICENSE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-### Advanced Configuration
+The license included for the project is under MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## CONTRIBUTING
 
-### Deployment
+UW Full-Stack Web Development Boot Camp Class Repo - Week 20 REACT
+https://uwa.bootcampcontent.com/UWA-Bootcamp/uw-blv-virt-fsf-pt-12-2021-u-c/-/tree/master/20-React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## QUESTIONS
 
-### `npm run build` fails to minify
+If you have any further questions about this module or improvement ideas, please feel free to connect on either GitHub or LinkedIn, or email me at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: https://github.com/NathanMilburn
+- LinkedIn: https://www.linkedin.com/in/nathan-milburn-55487513a/
+- E-Mail: nathan.milburn@outlook.com

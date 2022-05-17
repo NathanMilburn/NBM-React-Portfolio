@@ -61,9 +61,8 @@ const Navbar = () => (
                 <FontAwesomeIcon icon={faGithub} color="#f5fffa" />
             </a>
         </li>
-        {/* Look into why this doesn't work vvvv */}
         <li>
-            <a target="_blank" rel='noreferrer' href='../../assets/images/NBM-New-Resume.pdf'>
+            <a target="_blank" rel='noreferrer' href='https://drive.google.com/file/d/1ZJW0qzgLeG-a8hhokidY_S3v5DiuZxtq/view?usp=sharing'>
                 <FontAwesomeIcon icon={faIdCard} color="#f5fffa" />
             </a>
         </li>
