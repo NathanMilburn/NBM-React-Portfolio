@@ -27,7 +27,7 @@ const Navbar = () => (
         exact="true"
         activeclassname="active"
         className="my-work-link"
-        to="/my-work"
+        to="/projects"
       >
         <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
       </NavLink>
@@ -61,11 +61,12 @@ const Navbar = () => (
                 <FontAwesomeIcon icon={faGithub} color="#f5fffa" />
             </a>
         </li>
-        {/* <li>
+        {/* Look into why this doesn't work vvvv */}
+        <li>
             <a target="_blank" rel='noreferrer' href='../../assets/images/NBM-New-Resume.pdf'>
                 <FontAwesomeIcon icon={faIdCard} color="#f5fffa" />
             </a>
-        </li> */}
+        </li>
     </ul>
   </div>
 )
