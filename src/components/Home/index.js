@@ -10,7 +10,7 @@ const Home = () => {
   const lastNameArray = ['M', 'i', 'l', 'b', 'u', 'r', 'n']
 
   useEffect(() => {
-      return setTimeout(() => {
+       setTimeout(() => {
           setLetterClass('text-animate-hover')
       }, 4000)
   }, [])

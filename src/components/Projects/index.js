@@ -5,12 +5,14 @@ import krustyKrab from '../../assets/images/krusty-krab.jpg'
 import codeQuiz from '../../assets/images/quiz-main-page.png'
 import workScheduler from '../../assets/images/work-day-planner.PNG'
 import weaterDashboard from '../../assets/images/weather-dashboard.PNG'
+import noteTakerApp from '../../assets/images/note-taker-app.png'
+import teamProfileGenerator from '../../assets/images/team-generator-app.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
@@ -36,6 +38,12 @@ const Projects = () => {
         </a>
         <a href="https://nathanmilburn.github.io/NBM-Homework-06-WeatherDashboard/">
             <img src={weaterDashboard} alt="Howdy" />Weather Dashboard
+        </a>
+        <a href="https://github.com/NathanMilburn/NBM-Team-Profile-Generator">
+            <img src={teamProfileGenerator} alt="Howdy" />Team Profile Generator
+        </a>
+        <a href="https://github.com/NathanMilburn/NBM-Note-Taker">
+            <img src={noteTakerApp} alt="Howdy" />Note Taker Application
         </a>
         
 

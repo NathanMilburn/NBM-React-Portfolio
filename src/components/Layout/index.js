@@ -7,14 +7,17 @@ const Layout = () => {
     <div className="App">
         <Navbar />
         <div className='page'>
-            <span className='tags top-tags'>&lt;body&gt;</span>
+            {/* Acts as header element for each page */}
+            <br />
+            <span className='tags top-tags'>&lt;head&gt; <br />&lt;body&gt;</span>
 
             <Outlet />
 
             <span className='tags bottom-tags'>
             &lt;body&gt;
             <br />
-            <span className='bottom-tag-html'>&lt;/html&gt;</span>
+            {/* Acts as footer element for each page */}
+            <span className='bottom-tag-html'>&lt;footer&gt; <br/> &lt;/html&gt;</span>
             </span>
         </div>
     </div>
